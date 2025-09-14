@@ -1,0 +1,9 @@
+{
+  "IMAP_SERVER": "imap.gmail.com",
+  "IMAP_PORT": 993,
+  "EMAIL_ACCOUNT": "",
+  "APP_PASSWORD": "",
+  "FilerWords": ["Please describe the issue", "What are you having issues with?"],
+  "GoogleDriveCredentailFileName": "",
+  "GoogleDriveFolderId": ""
+}
