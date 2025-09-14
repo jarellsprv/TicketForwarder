@@ -7,7 +7,7 @@ class Logger:
     CYAN = '\033[36m'
     RESET = '\033[0m'
 
-    directory = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data/output/Logs")
+    directory = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data/output")
     file_name = f"{datetime.datetime.now().strftime('%m-%d-%Y-%H_%M_%S')}.txt"
     file_path = os.path.join(directory, file_name)
 
