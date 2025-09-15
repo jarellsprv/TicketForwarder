@@ -1,7 +1,9 @@
 from Config import  CONFIG
 from Logger import logger
 from googleapiclient.discovery import build
-import email, os
+from google_auth_oauthlib.flow import InstalledAppFlow
+from google.auth.transport.requests import Request
+import email, os, pickle
 
 def process_email(msg):
     for filter_word in CONFIG["FilerWords"]:
@@ -27,9 +29,6 @@ def check_inbox(mail):
 
 
 def create_doc(ticket_details):
-    import pickle
-    from google_auth_oauthlib.flow import InstalledAppFlow
-    from google.auth.transport.requests import Request
 
     SCOPES = [
         'https://www.googleapis.com/auth/drive',
